@@ -79,7 +79,7 @@ images\英语术语表.png
 
 <!-- by liaodequan -->
 
-Annotate the Project Structure and Its Corresponding Functions
+## Annotate the Project Structure and Its Corresponding Functions
 
 Files and Folders in the Root Directory
 DjangoForEveryone/
