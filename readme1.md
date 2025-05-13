@@ -113,3 +113,26 @@ Directory for Placing Images
 images/
 
 <!-- by liaodequan -->
+
+
+
+<!-- by yeliangyun -->
+
+🛠️ Technical Details
+
+Framework: Django 4.0+
+Language: Python 3.10+
+Dependencies: For a detailed list, see requirements.txt. Key dependencies include:
+Django: Core web framework
+mysqlclient: MySQL database driver
+pytest: Testing framework
+🎯 Project Goals and Use Cases
+The goal of this project is to provide an easy-to-use learning resource for Django beginners while serving as a reference for professional project structures for intermediate developers.
+
+Use Cases:
+
+Learning the basics and advanced techniques of the Django framework.
+Developing small web applications or rapid prototypes.
+Serving as an example project in teaching and training environments.
+
+<!-- by yeliangyun -->
