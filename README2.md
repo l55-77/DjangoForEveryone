@@ -1,4 +1,3 @@
-
 git clone https://github.com/yourname/DjangoForEveryone.git
 cd DjangoForEveryone
 git checkout post-tutorial  # 切换到完成态分支
@@ -29,8 +28,10 @@ DJANGOFOREVERYONE-1/
 │   ├── manage.py            # Django 命令行工具
 │   └── README.md            # 项目说明文档
 └── venv/
+    ├── README.md            # 虚拟环境说明文档
+    ├── readme.zh.md         # 中文说明文档
+    └── readme1.md           # 其他说明文档
 
-<!-- by 黄鹏 -->
 📸 功能示例与截图
 
 1. 数据模型管理界面
@@ -57,7 +58,7 @@ images/系统渲染的动态页面1.png
 │ View          │ 视图             │ 处理 HTTP 请求并返回响应的函数                │
 │ Model         │ 模型             │ 定义数据结构的类                            │
 └───────────────┴──────────────────┴────────────────────────────────────────────┘
-<!-- by 黄鹏 -->
+<!-- by 梁泽桂 -->
 
 <!-- by 曹锦贤 -->
 
@@ -96,3 +97,36 @@ venv/
 ### images 放置图片目录
 images/
 
+# 示例：添加一个简单的视图和 URL 路由
+
+# 1. 创建一个新的视图函数
+# 在 main/views.py 中添加以下代码：
+from django.http import HttpResponse
+
+def hello_world(request):
+    return HttpResponse("Hello, Django!")
+
+# 2. 配置 URL 路由
+# 在 main/urls.py 中添加路由配置：
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('hello/', views.hello_world, name='hello_world'),
+]
+
+# 3. 包含应用的 URL 配置
+# 在项目的 baseapp/urls.py 中包含 main 应用的 URL：
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('main.urls')),  # 包含 main 应用的 URL
+]
+
+# 4. 运行服务器并访问
+# 运行以下命令启动开发服务器：
+python manage.py runserver
+
+# 访问 http://127.0.0.1:8000/hello/ 查看效果。
