@@ -1,5 +1,5 @@
 DjangoForEveryone
-
+<!-- by 梁泽桂 -->
 一个面向初学者的Django教程项目仓库，包含基础应用开发示例和分阶段教程代码，帮助用户系统学习Django框架。
 
 ✨ 项目特点 🏗️ 基于 Django 4.0+ 构建
@@ -45,7 +45,11 @@ bash
 python manage.py runserver
 
 访问 http://127.0.0.1:8000/ 查看项目运行效果。
+<!-- by 梁泽桂 -->
 
+
+
+<!-- by 曹锦贤 -->
 #### 项目结构
 项目结构如下：
 DJANGOFOREVERYONE-1/
@@ -62,7 +66,7 @@ DJANGOFOREVERYONE-1/
 ├── README.md            # 虚拟环境说明文档
 ├── readme.zh.md         # 中文说明文档
 └── readme1.md           # 其他说明文档
-<!-- by 梁泽桂 -->
+<!-- by 曹锦贤 -->
 
 
 <!-- by 黄鹏 -->
